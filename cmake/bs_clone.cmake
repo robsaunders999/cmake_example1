@@ -5,7 +5,7 @@
 # Clone repo
 include(FetchContent)
 FetchContent_Declare(buildsystem
-  GIT_REPOSITORY    git@github.com:robsaunders123/cmake_bs.git
+  GIT_REPOSITORY    git@github.com:robsaunders999/cmake_bs.git
   GIT_TAG           master
 )
 FetchContent_MakeAvailable(buildsystem)
