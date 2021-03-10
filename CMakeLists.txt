@@ -12,11 +12,11 @@ project(generic
         LANGUAGES Fortran C 
         )
 
-# Load git repo
+# Clone build system files.
 if (EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/cmake/bs_clone.cmake)
   include(${CMAKE_CURRENT_SOURCE_DIR}/cmake/bs_clone.cmake)
 else()
-  message(FATAL_ERROR "Unable to load build tools.(${CMAKE_CURRENT_SOURCE_DIR}/bs_clone.cmake) ")
+  message(FATAL_ERROR "Unable to load build tools.(${CMAKE_CURRENT_SOURCE_DIR}/cmake/bs_clone.cmake) ")
 endif()
 
 # Boiler-plate here.
